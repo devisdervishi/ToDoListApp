@@ -1,0 +1,66 @@
+<html>
+
+<head>
+ <meta charset="UTF-8">
+<link rel="stylesheet" href="css.css">
+<script src="js.js"></script> 
+
+</head>
+
+<body onload="getFromLocalStorage()">
+<h1>Welcome to your task manager</h1>
+<div>
+
+<button id="openPopup" onclick="funksioniShfaq()" title="Shto task">+</button>
+
+</div>
+<br>
+<h2 id="title">Your Tasks:</h2>
+<div>
+
+<table id="tabela">
+
+  <tr>
+	<td>Description</td>
+    <td>Is done?</td>
+	<td>Date</td>
+	<td>Time</td>
+  </tr> 
+
+</table>
+
+
+
+</div>
+
+<div id="taskPopup" class="nonactive">
+<br>
+&nbsp;&nbsp;<label for="taskName">Task: </label>
+<input type="text" id="taskName" name="taskName" placeholder="Give task description">
+<br>
+<br>
+&nbsp;&nbsp;<label for="taskDate">Date: </label>
+<input type="date" id="taskDate" name="taskDate" placeholder="Set date date">
+<br>
+<br>
+&nbsp;&nbsp;<label for="taskTime">Time: </label>
+<input type="time" id="taskTime" name="taskTime" placeholder="Set task finish time">
+<br>
+<br>
+<br>
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="funksioniFshi()">Cancel</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button onclick="shtoTask()">Add</button>
+</div>
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>
